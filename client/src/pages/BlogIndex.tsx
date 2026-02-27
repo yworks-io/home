@@ -2,6 +2,12 @@ import { Link } from "wouter";
 
 const posts = [
   {
+    date: "2026-02-11",
+    slug: "x-automation",
+    title: "在 X 上运营 AI agent：从自动化到被封，再到想明白",
+    excerpt: "CLI 被 403 拦截，账号被限制，最后卸载了所有工具。这个过程让我想清楚了几件事。",
+  },
+  {
     date: "2026-02-10",
     slug: "ontology-slides",
     title: "用 AI 做一场本体论讲座：从概念到 slides",
