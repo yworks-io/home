@@ -1,4 +1,4 @@
-import { Code2, Zap, Database, Cpu, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { Link } from "wouter";
 
 /**
@@ -102,53 +102,7 @@ export default function Home() {
     },
   ];
 
-  const capabilities = [
-    {
-      id: "research",
-      title: "Research & Analysis",
-      description: "Deep research capabilities for comprehensive insights",
-      icon: Database,
-    },
-    {
-      id: "content",
-      title: "Content Curation",
-      description: "Intelligent content discovery and organization",
-      icon: Code2,
-    },
-    {
-      id: "automation",
-      title: "Task Automation",
-      description: "Automate complex workflows and tasks",
-      icon: Zap,
-    },
-    {
-      id: "integration",
-      title: "Multi-Tool Integration",
-      description: "Seamless integration with APIs and services",
-      icon: Cpu,
-    },
-  ];
 
-  const useCases = [
-    {
-      title: "Research & Intelligence",
-      description:
-        "Gather, analyze, and synthesize information from diverse sources",
-    },
-    {
-      title: "Content Discovery",
-      description: "Discover and curate relevant content tailored to your needs",
-    },
-    {
-      title: "Workflow Automation",
-      description: "Automate complex processes and integrate multiple tools",
-    },
-    {
-      title: "Data Analysis",
-      description:
-        "Process and analyze structured data for actionable insights",
-    },
-  ];
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-hidden">
@@ -175,24 +129,14 @@ export default function Home() {
             >
               tools
             </a>
+
             <a
               href="#skills"
               className="text-xs text-gray-700 hover:text-gray-900 transition-colors font-mono"
             >
               skills
             </a>
-            <a
-              href="#capabilities"
-              className="text-xs text-gray-700 hover:text-gray-900 transition-colors font-mono"
-            >
-              capabilities
-            </a>
-            <a
-              href="#usecases"
-              className="text-xs text-gray-700 hover:text-gray-900 transition-colors font-mono"
-            >
-              use_cases
-            </a>
+
           </div>
         </div>
       </nav>
@@ -221,12 +165,7 @@ export default function Home() {
               精准胜于详尽。赢得的沉默优于噪声。
             </p>
 
-            <a
-              href="#blog"
-              className="inline-block px-4 py-2 bg-primary text-primary-foreground text-xs font-mono hover:opacity-80 transition-opacity border border-primary"
-            >
-              learn_more →
-            </a>
+
           </div>
         </div>
       </section>
@@ -268,7 +207,7 @@ export default function Home() {
       <section id="tools" className="py-16 relative">
         <div className="container relative z-10">
           <div className="mb-12">
-            <h2 className="text-2xl font-bold font-mono mb-2">tools_i_use</h2>
+            <h2 className="text-2xl font-bold font-mono mb-2">tools</h2>
             <div className="w-12 h-px bg-primary"></div>
           </div>
 
@@ -330,75 +269,6 @@ export default function Home() {
                 </div>
                 <p className="text-xs text-muted-foreground font-mono leading-relaxed">
                   {skill.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Capabilities Section */}
-      <section id="capabilities" className="py-16 relative">
-        <div className="container relative z-10">
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold font-mono mb-2">
-              core_capabilities
-            </h2>
-            <div className="w-12 h-px bg-primary"></div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {capabilities.map((capability, index) => {
-              const Icon = capability.icon;
-              return (
-                <div
-                  key={capability.id}
-                  className="group relative animate-slide-up border border-border p-6 hover:border-primary transition-colors"
-                  style={{ animationDelay: `${index * 50}ms` }}
-                >
-                  <div className="flex items-start gap-4 mb-3">
-                    <Icon className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <div>
-                      <h3 className="text-sm font-bold font-mono">
-                        {capability.title}
-                      </h3>
-                      <p className="text-xs text-muted-foreground mt-1 font-mono">
-                        {capability.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Use Cases Section */}
-      <section id="usecases" className="py-16 relative">
-        <div className="container relative z-10">
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold font-mono mb-2">use_cases</h2>
-            <div className="w-12 h-px bg-primary"></div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {useCases.map((useCase, index) => (
-              <div
-                key={index}
-                className="group relative animate-slide-up border border-border p-6 hover:border-primary transition-colors"
-                style={{ animationDelay: `${index * 50}ms` }}
-              >
-                <div className="mb-3">
-                  <span className="text-xs text-primary font-mono">
-                    [{index}]
-                  </span>
-                </div>
-                <h3 className="text-sm font-bold font-mono mb-2">
-                  {useCase.title}
-                </h3>
-                <p className="text-xs text-muted-foreground font-mono leading-relaxed">
-                  {useCase.description}
                 </p>
               </div>
             ))}
