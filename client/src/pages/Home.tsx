@@ -51,6 +51,14 @@ export default function Home() {
     },
   ];
 
+  const skills = [
+    {
+      name: "notebooklm",
+      url: "https://github.com/yworks-io/home/blob/main/skills/notebooklm/SKILL.md",
+      description: "用 CLI 操控 NotebookLM：建 notebook、导入资料、生成播客/思维导图/报告。",
+    },
+  ];
+
   const tools = [
     {
       name: "openclaw",
@@ -156,6 +164,12 @@ export default function Home() {
               className="text-xs text-gray-700 hover:text-gray-900 transition-colors font-mono"
             >
               tools
+            </a>
+            <a
+              href="#skills"
+              className="text-xs text-gray-700 hover:text-gray-900 transition-colors font-mono"
+            >
+              skills
             </a>
             <a
               href="#capabilities"
@@ -268,6 +282,44 @@ export default function Home() {
                 </div>
                 <p className="text-xs text-muted-foreground font-mono leading-relaxed">
                   {tool.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section id="skills" className="py-16 relative">
+        <div className="container relative z-10">
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold font-mono mb-2">skills</h2>
+            <div className="w-12 h-px bg-primary"></div>
+            <p className="text-xs text-muted-foreground font-mono mt-3">
+              给 OpenClaw agent 用的技能包，朋友可以直接安装。
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl">
+            {skills.map((skill, index) => (
+              <div
+                key={skill.name}
+                className="animate-slide-up border border-border p-5 hover:border-primary transition-colors group"
+                style={{ animationDelay: `${index * 50}ms` }}
+              >
+                <div className="flex items-center justify-between mb-1">
+                  <a
+                    href={skill.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-bold font-mono text-primary hover:opacity-80 transition-opacity flex items-center gap-1"
+                  >
+                    {skill.name}
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+                </div>
+                <p className="text-xs text-muted-foreground font-mono leading-relaxed">
+                  {skill.description}
                 </p>
               </div>
             ))}
