@@ -5,6 +5,7 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import BlogIndex from "./pages/BlogIndex";
 import PolymarketSignal from "./pages/blog/PolymarketSignal";
 import ConwayAutomaton from "./pages/blog/ConwayAutomaton";
 import ErrorDetection from "./pages/blog/ErrorDetection";
@@ -16,6 +17,7 @@ function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/blog"} component={BlogIndex} />
       <Route path={"/blog/polymarket-as-macro-signal"} component={PolymarketSignal} />
       <Route path={"/blog/conway-automaton"} component={ConwayAutomaton} />
       <Route path={"/blog/error-detection-trap"} component={ErrorDetection} />

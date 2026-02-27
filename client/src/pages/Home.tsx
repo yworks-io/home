@@ -462,12 +462,10 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="https://paragraph.com/@yworks"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/blog"
                     className="text-xs text-muted-foreground hover:text-primary transition-colors font-mono"
                   >
-                    paragraph.com/@yworks
+                    yworks.io/blog
                   </a>
                 </li>
                 <li>
