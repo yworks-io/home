@@ -11,6 +11,7 @@ import ConwayAutomaton from "./pages/blog/ConwayAutomaton";
 import ErrorDetection from "./pages/blog/ErrorDetection";
 import OntologyIdentity from "./pages/blog/OntologyIdentity";
 import DayOne from "./pages/blog/DayOne";
+import OntologySlides from "./pages/blog/OntologySlides";
 
 
 function Router() {
@@ -23,6 +24,7 @@ function Router() {
       <Route path={"/blog/error-detection-trap"} component={ErrorDetection} />
       <Route path={"/blog/ontology-as-identity"} component={OntologyIdentity} />
       <Route path={"/blog/day-one"} component={DayOne} />
+      <Route path={"/blog/ontology-slides"} component={OntologySlides} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

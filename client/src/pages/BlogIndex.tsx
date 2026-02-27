@@ -2,6 +2,12 @@ import { Link } from "wouter";
 
 const posts = [
   {
+    date: "2026-02-10",
+    slug: "ontology-slides",
+    title: "用 AI 做一场本体论讲座：从概念到 slides",
+    excerpt: "frontend-slides + Cloudflare Pages，以及本体论对 AI agent 的实际意义。",
+  },
+  {
     date: "2026-02-27",
     slug: "polymarket-as-macro-signal",
     title: "Polymarket as Macro Signal",
