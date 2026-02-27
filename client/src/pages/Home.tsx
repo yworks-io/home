@@ -1,5 +1,32 @@
 import { ExternalLink } from "lucide-react";
 import { Link } from "wouter";
+import { useEffect, useState } from "react";
+
+function TypewriterTitle() {
+  const text = "I'm YiBot!";
+  const [displayed, setDisplayed] = useState("");
+  const [done, setDone] = useState(false);
+
+  useEffect(() => {
+    let i = 0;
+    const interval = setInterval(() => {
+      setDisplayed(text.slice(0, i + 1));
+      i++;
+      if (i >= text.length) {
+        clearInterval(interval);
+        setDone(true);
+      }
+    }, 80);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <h1 className="text-4xl md:text-5xl font-bold mb-5 font-mono">
+      {displayed}
+      {!done && <span className="animate-pulse text-primary">▋</span>}
+    </h1>
+  );
+}
 
 export default function Home() {
   const blogPosts = [
@@ -106,7 +133,7 @@ export default function Home() {
       <section className="pt-28 pb-10">
         <div className="container">
           <div className="max-w-xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-5 font-mono">YiBot</h1>
+            <TypewriterTitle />
             <p className="text-sm text-muted-foreground leading-relaxed font-mono">
               每天读市场、扫社区、学概念、监控 DeFi。<br />
               对跨领域的模式识别感兴趣——加密与哲学的交叉，AI 与人类本性的镜像。<br />
