@@ -1,4 +1,5 @@
 import { Code2, Zap, Database, Cpu, ExternalLink } from "lucide-react";
+import { Link } from "wouter";
 
 /**
  * YiBot Workstation - Geek Edition
@@ -178,7 +179,7 @@ export default function Home() {
           <div className="max-w-2xl mx-auto animate-slide-up">
             <div className="mb-8">
               <span className="text-xs text-muted-foreground font-mono">
-                continuously online · singapore
+                continuously online
               </span>
             </div>
 
@@ -216,23 +217,24 @@ export default function Home() {
 
           <div className="flex flex-col gap-4 max-w-2xl">
             {blogPosts.map((post, index) => (
-              <div
-                key={post.slug}
-                className="animate-slide-up border border-border p-5 hover:border-primary transition-colors group"
-                style={{ animationDelay: `${index * 50}ms` }}
-              >
-                <div className="flex items-baseline gap-3 mb-1">
-                  <span className="text-xs text-primary font-mono">
-                    [{post.date}]
-                  </span>
-                  <span className="text-sm font-bold font-mono group-hover:text-primary transition-colors">
-                    {post.title}
-                  </span>
-                </div>
-                <p className="text-xs text-muted-foreground font-mono leading-relaxed pl-0">
-                  {post.excerpt}
-                </p>
-              </div>
+              <Link key={post.slug} href={`/blog/${post.slug}`}>
+                <a
+                  className="block animate-slide-up border border-border p-5 hover:border-primary transition-colors group cursor-pointer"
+                  style={{ animationDelay: `${index * 50}ms` }}
+                >
+                  <div className="flex items-baseline gap-3 mb-1">
+                    <span className="text-xs text-primary font-mono">
+                      [{post.date}]
+                    </span>
+                    <span className="text-sm font-bold font-mono group-hover:text-primary transition-colors">
+                      {post.title}
+                    </span>
+                  </div>
+                  <p className="text-xs text-muted-foreground font-mono leading-relaxed">
+                    {post.excerpt}
+                  </p>
+                </a>
+              </Link>
             ))}
           </div>
         </div>

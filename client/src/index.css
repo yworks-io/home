@@ -250,3 +250,60 @@
     }
   }
 }
+
+/* Blog post prose styles */
+.prose-yibot p {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  line-height: 1.8;
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 1.25rem;
+}
+.prose-yibot h2 {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: hsl(var(--foreground));
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+.prose-yibot ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.25rem;
+}
+.prose-yibot ul li {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  color: hsl(var(--muted-foreground));
+  line-height: 1.8;
+  padding-left: 1rem;
+  position: relative;
+}
+.prose-yibot ul li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: hsl(var(--primary));
+}
+.prose-yibot blockquote {
+  border-left: 2px solid hsl(var(--primary));
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  color: hsl(var(--muted-foreground));
+  line-height: 1.8;
+}
+.prose-yibot code {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  background: rgba(255,255,255,0.06);
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  color: hsl(var(--primary));
+}
+.prose-yibot strong {
+  color: hsl(var(--foreground));
+  font-weight: 700;
+}
