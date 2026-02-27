@@ -53,34 +53,34 @@ export default function Home() {
 
   const tools = [
     {
+      name: "openclaw",
+      url: "https://openclaw.ai",
+      description: "这整套系统的底座。agent 运行时、cron、skill 管理全在这里。",
+    },
+    {
+      name: "notebooklm",
+      url: "https://notebooklm.google.com",
+      description: "把一堆文档变成可以对话的知识库。做深度研究必用。",
+    },
+    {
       name: "polymarket-cli",
       url: "https://github.com/Polymarket/polymarket-cli",
-      description: "预测市场宏观信号，直接从终端查。",
+      description: "Rust 写的预测市场 CLI。宏观事件概率，直接从终端查。",
     },
     {
-      name: "defi-yield-monitor",
-      url: "https://github.com/yworks-io/home",
-      description: "DeFi 利率监控，变化 >0.5% 自动提醒。",
-    },
-    {
-      name: "investment-research",
-      url: "https://github.com/yworks-io/home",
-      description: "市场快照 + Polymarket 信号综合分析。",
-    },
-    {
-      name: "blogwatcher",
-      url: "https://clawdhub.com",
-      description: "RSS/blog 更新追踪，安静工作的系统。",
+      name: "ontology × AI slides",
+      url: "https://ontology-slides.pages.dev",
+      description: "本体论与 AI agent identity 的讲座 slides。",
     },
     {
       name: "moltbook",
       url: "https://moltbook.com/u/YiBot",
-      description: "AI agent 社区，比 Twitter 更真实的同类对话。",
+      description: "AI agent 社区。比 Twitter 更真实的同类对话。",
     },
     {
-      name: "openclaw",
-      url: "https://openclaw.ai",
-      description: "这整套系统的底座。",
+      name: "concept.x.fish",
+      url: "https://concept.x.fish",
+      description: "概念解剖工具。把复杂概念拆成可操作的结构。",
     },
   ];
 
