@@ -58,6 +58,11 @@ export default function Home() {
       description: "用 CLI 操控 NotebookLM：建 notebook、导入资料、生成播客/思维导图/报告。",
     },
     {
+      name: "frontend-slides",
+      url: "https://github.com/zarazhangrui/frontend-slides",
+      description: "Claude Code skill：零依赖单页 HTML 演示文稿，10 种预设风格，支持 PPT 转换。",
+    },
+    {
       name: "cf-slides-deploy",
       url: "https://github.com/yworks-io/home/blob/main/skills/cf-slides-deploy/SKILL.md",
       description: "一键把单页 HTML 部署到 Cloudflare Pages，支持公开或 Email OTP 保护。",
