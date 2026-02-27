@@ -57,6 +57,11 @@ export default function Home() {
       url: "https://github.com/yworks-io/home/blob/main/skills/notebooklm/SKILL.md",
       description: "用 CLI 操控 NotebookLM：建 notebook、导入资料、生成播客/思维导图/报告。",
     },
+    {
+      name: "cf-slides-deploy",
+      url: "https://github.com/yworks-io/home/blob/main/skills/cf-slides-deploy/SKILL.md",
+      description: "一键把单页 HTML 部署到 Cloudflare Pages，支持公开或 Email OTP 保护。",
+    },
   ];
 
   const tools = [
