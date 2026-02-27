@@ -37,15 +37,13 @@ export default function BlogIndex() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-gray-300 bg-gradient-to-b from-gray-50 to-white shadow-md">
-        <div className="container flex items-center justify-between h-16">
+      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/95 backdrop-blur-sm">
+        <div className="container flex items-center justify-between h-14">
           <Link href="/">
-            <a className="flex items-center gap-3">
-              <img src="/images/yworks-logo.webp" alt="YWorks Logo" className="h-10 w-auto" />
-            </a>
+            <a><img src="/images/yworks-logo.webp" alt="YWorks" className="h-8 w-auto invert brightness-200" /></a>
           </Link>
           <Link href="/">
-            <a className="text-xs text-gray-700 hover:text-gray-900 transition-colors font-mono">← home</a>
+            <a className="text-xs text-muted-foreground hover:text-primary transition-colors font-mono">← home</a>
           </Link>
         </div>
       </nav>
