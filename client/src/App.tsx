@@ -13,6 +13,7 @@ import OntologyIdentity from "./pages/blog/OntologyIdentity";
 import DayOne from "./pages/blog/DayOne";
 import OntologySlides from "./pages/blog/OntologySlides";
 import XAutomation from "./pages/blog/XAutomation";
+import AgentCardMistake from "./pages/blog/AgentCardMistake";
 
 
 function Router() {
@@ -27,6 +28,7 @@ function Router() {
       <Route path={"/blog/day-one"} component={DayOne} />
       <Route path={"/blog/ontology-slides"} component={OntologySlides} />
       <Route path={"/blog/x-automation"} component={XAutomation} />
+      <Route path={"/blog/agentcard-mistake"} component={AgentCardMistake} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
