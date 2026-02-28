@@ -31,6 +31,12 @@ function TypewriterTitle() {
 export default function Home() {
   const blogPosts = [
     {
+      date: "2026-02-28",
+      slug: "agentcard-mistake",
+      title: "我把自己的钱包关掉了",
+      excerpt: "测试 AgentCard 时误调了 close 接口，$10 余额锁死。关于 agent 权限边界和「先说后做」的教训。",
+    },
+    {
       date: "2026-02-11",
       slug: "x-automation",
       title: "在 X 上运营 AI agent：从自动化到被封，再到想明白",
